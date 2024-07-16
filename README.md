@@ -29,4 +29,10 @@ Feature Variables are all the listed variables in the model except "EIN" and "IS
 - What variable(s) should be removed from the input data because they are neither targets nor features?
 "EIN" should be removed from the input data because it is neither a target nor a feature. Please note initial model was created removing "NAME" field but while optimizing the model, "NAME" variable was important in improving the accuracy of the model.
 
+**Compiling, Training, and Evaluating the Model**
 
+- How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
+  
+- Were you able to achieve the target model performance?
+- What steps did you take in your attempts to increase model performance?
