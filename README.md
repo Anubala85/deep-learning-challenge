@@ -1,4 +1,29 @@
-# Deep-Learning-Challenge: Report
+# Deep-Learning-Challenge - Requirements
+
+**Pre-process the Data:**
+- Created a dataframe containing the charity_data.csv data , and identified the target and feature variables in the dataset.
+- Dropped the EIN and NAME columns.
+- Determined the number of unique values in each column
+- For columns with more than 10 unique values, determined the number of data points for each unique value
+- Created a new value called Other that contains rare categorical variables
+- Created a feature array, X, and a target array, y by using the preprocessed data
+- Split the preprocessed data into training and testing datasets
+- Scaled the data by using a StandardScaler that has been fitted to the training data
+
+**Compile, Train and Evaluate the Model**
+- Created a neural network model with a defined number of input features and nodes for each layer
+- Created hidden layers and an output layer with appropriate activation functions
+- Checked the structure of the model
+- Compiled and trained the model
+- Evaluated the model using the test data to determine the loss and accuracy
+- Exported your results to an HDF5 file named AlphabetSoupCharity.h5
+
+**Optimize the Model**
+- Repeated the preprocessing steps in a new Jupyter notebook
+- Created a new neural network model, implementing 3 model optimization methods
+- Saved and export your results to an HDF5 file named AlphabetSoupCharity_Optimization.h5
+
+# Report
 
 **Overview of the Analysis**
 
@@ -37,14 +62,16 @@ Feature Variables are all the listed variables in the model except "EIN" and "IS
 Tried different variations while optimizing the model but eventually selected the following parameters (Optimization 3) for my neural network model to get maximum accuracy possible.
 - 2 Layers with **Layer 1: 16 nodes** and **Layer 2: 8 nodes**. Neuron counts were selected as powers of 2 to best utilize the resources available
 - **Relu** is used as the activation function except for Output layer where **Sigmoid** is used. "Relu" Function works better for non-linear functions.
-  
-![image](https://github.com/user-attachments/assets/07f36124-0aa7-4e07-bd3c-a60c4b5e069c)
+
+ <img src="https://github.com/user-attachments/assets/07f36124-0aa7-4e07-bd3c-a60c4b5e069c" width="900">
+
 
 **2. Were you able to achieve the target model performance?**
 
 Yes, achieved target model performance of `greater than 75%`. My optimization 3 resulted in **77.9% accuracy.**
 
-![image](https://github.com/user-attachments/assets/9230ab77-8f06-402c-b54c-bce48bc911cd)
+<img src="https://github.com/user-attachments/assets/9230ab77-8f06-402c-b54c-bce48bc911cd" width="600">
+
 
 **3. What steps did you take in your attempts to increase model performance?**
 
