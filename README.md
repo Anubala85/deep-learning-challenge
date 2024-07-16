@@ -32,7 +32,13 @@ Feature Variables are all the listed variables in the model except "EIN" and "IS
 **Compiling, Training, and Evaluating the Model**
 
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Tried different variations while optimizing the model but eventually selected the following parameters (Optimization 3) for my neural network model to get maximum accuracy possible.
+  - 2 Layers with `Layer 1: 16 nodes` and `Layer 2: 8 nodes`. Neuron counts were selected as powers of 2 to best utilize the resources available
+  - Used `Relu` as the activation function except for Output layer where `Sigmoid` was used. `Relu` Function works better for non-linear functions.
+  
+![image](https://github.com/user-attachments/assets/07f36124-0aa7-4e07-bd3c-a60c4b5e069c)
 
   
 - Were you able to achieve the target model performance?
+Yes, achieved target model performance of `greater than 75%`. My optimization 3 resulted in `77.9%` accuracy
 - What steps did you take in your attempts to increase model performance?
