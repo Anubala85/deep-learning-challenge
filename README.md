@@ -44,6 +44,8 @@ Tried different variations while optimizing the model but eventually selected th
 
 Yes, achieved target model performance of `greater than 75%`. My optimization 3 resulted in **77.9% accuracy.**
 
+![image](https://github.com/user-attachments/assets/9230ab77-8f06-402c-b54c-bce48bc911cd)
+
 **3. What steps did you take in your attempts to increase model performance?**
 
 Steps taken across the 3 different model optimizations to increase model accuracy includes:
@@ -61,3 +63,6 @@ My model optimization 3 resulted in max accuracy of 77.9% higher than the target
 - "RELU" activation function was used for hidden layers with "Sigmoid" for the outer layer
 - Number of Epochs was set to 40
 
+# Summary
+
+In summary, the neural network model leveraging TensorFlow and Keras was able to achieve an accuracy of 77.9% in classifying the success of organizations funded by AlphabetSoup Charity. Although the set of instructions provided for the initial model asked to drop off the "NAME" variable, inclusion of this variable was key to improving the model accuracy. Attempted 3 optimizations by changing columns, binning categorical variables, altering hidden layers and number of neurons, changing activation functions and # epochs. After such attempts, final model has been created with an accuracy of 77.9% which is beyond the targeted rate of 75%. Alternatively, I recommend using a different type of model, such as Random Forest Classifier or a Support Vector Machine (SVM) for handling such classification problems. These models are effective in binary classifications and may be able to achieve a higher accuracy without the need for too many optimization attempts. They are proven to better handle both numerical and categorical variables while accounting for data outliers and imbalanced datasets.
