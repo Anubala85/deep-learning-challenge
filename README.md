@@ -48,3 +48,19 @@ Tried different variations while optimizing the model but eventually selected th
 Yes, achieved target model performance of `greater than 75%`. My optimization 3 resulted in **77.9% accuracy.**
 
 - What steps did you take in your attempts to increase model performance?
+
+Steps taken across the 3 different model optimizations to increase model accuracy includes:
+        - Adding a column "NAME" back to the model
+        - Altered the number of bins for rare occurences in columns
+        - Changed the number of hidden layers, # nodes and activation functions
+        - Altered the number of epochs used to train the model
+
+My model optimization 3 resulted in max accuracy of 77.9% higher than the targeted 75% due to the following steps:
+    - Added "NAME" Variable back to the model
+    - List of "NAME" with value counts < 10 were replaced 
+    - List of "APPLICATION TYPES" with value counts < 500 were replaced 
+    - List of "CLASSIFICATION TYPES" with value counts < 200 were replaced
+    - 2 layers with #nodes: 16 and 8 were selected
+    - "RELU" activation function was used for hidden layers with "Sigmoid" for the outer layer
+    - # Epochs was set to 40
+
